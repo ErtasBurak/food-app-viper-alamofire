@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F11B08B52902B34A00005115 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B08B42902B34A00005115 /* CartTableViewCell.swift */; };
+		F11B08B72902B35B00005115 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B08B62902B35B00005115 /* FoodTableViewCell.swift */; };
+		F11B08C12902BC6400005115 /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B08C02902BC6400005115 /* Foods.swift */; };
+		F11B08C32902BC6E00005115 /* FoodsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B08C22902BC6E00005115 /* FoodsResult.swift */; };
+		F11B08C52902BE1000005115 /* FoodsMainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B08C42902BE1000005115 /* FoodsMainPresenter.swift */; };
+		F11B08C72902BE3000005115 /* FoodsMainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B08C62902BE3000005115 /* FoodsMainInteractor.swift */; };
+		F11B08C92902BE3C00005115 /* FoodsMainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B08C82902BE3C00005115 /* FoodsMainRouter.swift */; };
+		F11B08CB2902BE4B00005115 /* FoodsMainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B08CA2902BE4B00005115 /* FoodsMainProtocol.swift */; };
+		F11B08CE2902C3FF00005115 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F11B08CD2902C3FF00005115 /* Alamofire */; };
+		F11B08D12902DD3F00005115 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F11B08D02902DD3F00005115 /* Kingfisher */; };
+		F1283E8A2902046300002689 /* GMStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1283E892902046300002689 /* GMStepper.swift */; };
 		F13725AB28FEB71500B95469 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13725AA28FEB71500B95469 /* AppDelegate.swift */; };
 		F13725AD28FEB71500B95469 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13725AC28FEB71500B95469 /* SceneDelegate.swift */; };
 		F13725AF28FEB71500B95469 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13725AE28FEB71500B95469 /* OnboardingScreen.swift */; };
@@ -20,6 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F11B08B42902B34A00005115 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
+		F11B08B62902B35B00005115 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		F11B08C02902BC6400005115 /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
+		F11B08C22902BC6E00005115 /* FoodsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsResult.swift; sourceTree = "<group>"; };
+		F11B08C42902BE1000005115 /* FoodsMainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsMainPresenter.swift; sourceTree = "<group>"; };
+		F11B08C62902BE3000005115 /* FoodsMainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsMainInteractor.swift; sourceTree = "<group>"; };
+		F11B08C82902BE3C00005115 /* FoodsMainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsMainRouter.swift; sourceTree = "<group>"; };
+		F11B08CA2902BE4B00005115 /* FoodsMainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsMainProtocol.swift; sourceTree = "<group>"; };
+		F1283E892902046300002689 /* GMStepper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GMStepper.swift; sourceTree = "<group>"; };
 		F13725A728FEB71500B95469 /* FoodApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F13725AA28FEB71500B95469 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F13725AC28FEB71500B95469 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,13 +58,85 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F11B08D12902DD3F00005115 /* Kingfisher in Frameworks */,
 				F13725C628FF22D300B95469 /* Lottie in Frameworks */,
+				F11B08CE2902C3FF00005115 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F11B08B82902BB3D00005115 /* foodmain-module */ = {
+			isa = PBXGroup;
+			children = (
+				F11B08BE2902BBB700005115 /* tableview */,
+				F11B08BD2902BBAA00005115 /* protocol */,
+				F11B08BC2902BB9800005115 /* router */,
+				F11B08BB2902BB9000005115 /* interactor */,
+				F11B08BA2902BB8800005115 /* presenter */,
+				F11B08B92902BB8300005115 /* view */,
+			);
+			path = "foodmain-module";
+			sourceTree = "<group>";
+		};
+		F11B08B92902BB8300005115 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F13725BE28FEF57700B95469 /* FoodMainVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F11B08BA2902BB8800005115 /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F11B08C42902BE1000005115 /* FoodsMainPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		F11B08BB2902BB9000005115 /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F11B08C62902BE3000005115 /* FoodsMainInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		F11B08BC2902BB9800005115 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				F11B08C82902BE3C00005115 /* FoodsMainRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		F11B08BD2902BBAA00005115 /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F11B08CA2902BE4B00005115 /* FoodsMainProtocol.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		F11B08BE2902BBB700005115 /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				F11B08B62902B35B00005115 /* FoodTableViewCell.swift */,
+			);
+			path = tableview;
+			sourceTree = "<group>";
+		};
+		F11B08BF2902BC5000005115 /* entity */ = {
+			isa = PBXGroup;
+			children = (
+				F11B08C02902BC6400005115 /* Foods.swift */,
+				F11B08C22902BC6E00005115 /* FoodsResult.swift */,
+			);
+			path = entity;
+			sourceTree = "<group>";
+		};
 		F137259E28FEB71400B95469 = {
 			isa = PBXGroup;
 			children = (
@@ -67,9 +159,12 @@
 				F13725AA28FEB71500B95469 /* AppDelegate.swift */,
 				F13725AC28FEB71500B95469 /* SceneDelegate.swift */,
 				F13725AE28FEB71500B95469 /* OnboardingScreen.swift */,
-				F13725BE28FEF57700B95469 /* FoodMainVC.swift */,
 				F13725C028FEF58700B95469 /* FoodDetailVC.swift */,
+				F1283E892902046300002689 /* GMStepper.swift */,
 				F13725C228FEF5C600B95469 /* FoodCartVC.swift */,
+				F11B08B42902B34A00005115 /* CartTableViewCell.swift */,
+				F11B08BF2902BC5000005115 /* entity */,
+				F11B08B82902BB3D00005115 /* foodmain-module */,
 				F13725B028FEB71500B95469 /* Main.storyboard */,
 				F13725B328FEB71800B95469 /* Assets.xcassets */,
 				F13725B528FEB71800B95469 /* LaunchScreen.storyboard */,
@@ -96,6 +191,8 @@
 			name = FoodApp;
 			packageProductDependencies = (
 				F13725C528FF22D300B95469 /* Lottie */,
+				F11B08CD2902C3FF00005115 /* Alamofire */,
+				F11B08D02902DD3F00005115 /* Kingfisher */,
 			);
 			productName = FoodApp;
 			productReference = F13725A728FEB71500B95469 /* FoodApp.app */;
@@ -127,6 +224,8 @@
 			mainGroup = F137259E28FEB71400B95469;
 			packageReferences = (
 				F13725C428FF22D300B95469 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				F11B08CC2902C3FF00005115 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F11B08CF2902DD3F00005115 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = F13725A828FEB71500B95469 /* Products */;
 			projectDirPath = "";
@@ -158,9 +257,18 @@
 				F13725AF28FEB71500B95469 /* OnboardingScreen.swift in Sources */,
 				F13725C128FEF58700B95469 /* FoodDetailVC.swift in Sources */,
 				F13725C328FEF5C600B95469 /* FoodCartVC.swift in Sources */,
+				F11B08C52902BE1000005115 /* FoodsMainPresenter.swift in Sources */,
 				F13725AB28FEB71500B95469 /* AppDelegate.swift in Sources */,
 				F13725AD28FEB71500B95469 /* SceneDelegate.swift in Sources */,
+				F11B08C12902BC6400005115 /* Foods.swift in Sources */,
 				F13725BF28FEF57700B95469 /* FoodMainVC.swift in Sources */,
+				F1283E8A2902046300002689 /* GMStepper.swift in Sources */,
+				F11B08C72902BE3000005115 /* FoodsMainInteractor.swift in Sources */,
+				F11B08B52902B34A00005115 /* CartTableViewCell.swift in Sources */,
+				F11B08B72902B35B00005115 /* FoodTableViewCell.swift in Sources */,
+				F11B08C32902BC6E00005115 /* FoodsResult.swift in Sources */,
+				F11B08CB2902BE4B00005115 /* FoodsMainProtocol.swift in Sources */,
+				F11B08C92902BE3C00005115 /* FoodsMainRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +420,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -339,6 +448,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -378,6 +488,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		F11B08CC2902C3FF00005115 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		F11B08CF2902DD3F00005115 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		F13725C428FF22D300B95469 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -389,6 +515,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		F11B08CD2902C3FF00005115 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F11B08CC2902C3FF00005115 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		F11B08D02902DD3F00005115 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F11B08CF2902DD3F00005115 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		F13725C528FF22D300B95469 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F13725C428FF22D300B95469 /* XCRemoteSwiftPackageReference "lottie-ios" */;

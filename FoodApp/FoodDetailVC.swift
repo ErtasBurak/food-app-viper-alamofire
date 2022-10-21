@@ -9,6 +9,15 @@ import UIKit
 
 class FoodDetailVC: UIViewController {
 
+    @IBOutlet weak var foodsDetailName: UILabel!
+    @IBOutlet weak var foodsDetailPrice: UILabel!
+    @IBOutlet weak var foodsDetailImage: UIImageView!
+    @IBOutlet weak var foodsDetailStepper: GMStepper!
+    
+    var food: Foods?
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,5 +34,7 @@ class FoodDetailVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func foodsDetailButton(_ sender: Any) {
+    }
+    
 }
