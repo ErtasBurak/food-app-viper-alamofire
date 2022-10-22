@@ -71,7 +71,7 @@ extension FoodMainVC: UITableViewDelegate, UITableViewDataSource {
         let food = foodsList[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "foodCell") as! FoodTableViewCell
-        
+        cell.selectionStyle = .none
         
         if let url = URL(string: "http://kasimadalan.pe.hu/yemekler/resimler/\(food.yemek_resim_adi!)") {
             DispatchQueue.main.async {

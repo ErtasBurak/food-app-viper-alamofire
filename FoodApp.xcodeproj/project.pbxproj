@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F1155944290419C600C11E0B /* FoodsDetailProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1155943290419C600C11E0B /* FoodsDetailProtocol.swift */; };
+		F115594629041B0A00C11E0B /* FoodsDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115594529041B0A00C11E0B /* FoodsDetailPresenter.swift */; };
+		F115594829041B6000C11E0B /* FoodsDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115594729041B6000C11E0B /* FoodsDetailInteractor.swift */; };
+		F115594A29042E8000C11E0B /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115594929042E8000C11E0B /* Cart.swift */; };
+		F115594C29042E8F00C11E0B /* CartResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115594B29042E8F00C11E0B /* CartResult.swift */; };
+		F115594E290453D000C11E0B /* FoodsDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F115594D290453D000C11E0B /* FoodsDetailRouter.swift */; };
 		F11B08B52902B34A00005115 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B08B42902B34A00005115 /* CartTableViewCell.swift */; };
 		F11B08B72902B35B00005115 /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B08B62902B35B00005115 /* FoodTableViewCell.swift */; };
 		F11B08C12902BC6400005115 /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B08C02902BC6400005115 /* Foods.swift */; };
@@ -31,6 +37,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F1155943290419C600C11E0B /* FoodsDetailProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsDetailProtocol.swift; sourceTree = "<group>"; };
+		F115594529041B0A00C11E0B /* FoodsDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsDetailPresenter.swift; sourceTree = "<group>"; };
+		F115594729041B6000C11E0B /* FoodsDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsDetailInteractor.swift; sourceTree = "<group>"; };
+		F115594929042E8000C11E0B /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
+		F115594B29042E8F00C11E0B /* CartResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartResult.swift; sourceTree = "<group>"; };
+		F115594D290453D000C11E0B /* FoodsDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsDetailRouter.swift; sourceTree = "<group>"; };
 		F11B08B42902B34A00005115 /* CartTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartTableViewCell.swift; sourceTree = "<group>"; };
 		F11B08B62902B35B00005115 /* FoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 		F11B08C02902BC6400005115 /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
@@ -67,6 +79,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F115593D29040F5400C11E0B /* fooddetail-module */ = {
+			isa = PBXGroup;
+			children = (
+				F115594229040F8400C11E0B /* protocol */,
+				F115594129040F7B00C11E0B /* router */,
+				F115594029040F7400C11E0B /* interactor */,
+				F115593F29040F6C00C11E0B /* presenter */,
+				F115593E29040F6500C11E0B /* view */,
+			);
+			path = "fooddetail-module";
+			sourceTree = "<group>";
+		};
+		F115593E29040F6500C11E0B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F13725C028FEF58700B95469 /* FoodDetailVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		F115593F29040F6C00C11E0B /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F115594529041B0A00C11E0B /* FoodsDetailPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		F115594029040F7400C11E0B /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				F115594729041B6000C11E0B /* FoodsDetailInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		F115594129040F7B00C11E0B /* router */ = {
+			isa = PBXGroup;
+			children = (
+				F115594D290453D000C11E0B /* FoodsDetailRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		F115594229040F8400C11E0B /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				F1155943290419C600C11E0B /* FoodsDetailProtocol.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
+		F115594F29045F6500C11E0B /* foodcart-module */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "foodcart-module";
+			sourceTree = "<group>";
+		};
+		F115595029046CE800C11E0B /* config */ = {
+			isa = PBXGroup;
+			children = (
+				F1283E892902046300002689 /* GMStepper.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
 		F11B08B82902BB3D00005115 /* foodmain-module */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +212,8 @@
 			children = (
 				F11B08C02902BC6400005115 /* Foods.swift */,
 				F11B08C22902BC6E00005115 /* FoodsResult.swift */,
+				F115594929042E8000C11E0B /* Cart.swift */,
+				F115594B29042E8F00C11E0B /* CartResult.swift */,
 			);
 			path = entity;
 			sourceTree = "<group>";
@@ -159,10 +240,11 @@
 				F13725AA28FEB71500B95469 /* AppDelegate.swift */,
 				F13725AC28FEB71500B95469 /* SceneDelegate.swift */,
 				F13725AE28FEB71500B95469 /* OnboardingScreen.swift */,
-				F13725C028FEF58700B95469 /* FoodDetailVC.swift */,
-				F1283E892902046300002689 /* GMStepper.swift */,
 				F13725C228FEF5C600B95469 /* FoodCartVC.swift */,
 				F11B08B42902B34A00005115 /* CartTableViewCell.swift */,
+				F115595029046CE800C11E0B /* config */,
+				F115594F29045F6500C11E0B /* foodcart-module */,
+				F115593D29040F5400C11E0B /* fooddetail-module */,
 				F11B08BF2902BC5000005115 /* entity */,
 				F11B08B82902BB3D00005115 /* foodmain-module */,
 				F13725B028FEB71500B95469 /* Main.storyboard */,
@@ -256,8 +338,13 @@
 			files = (
 				F13725AF28FEB71500B95469 /* OnboardingScreen.swift in Sources */,
 				F13725C128FEF58700B95469 /* FoodDetailVC.swift in Sources */,
+				F115594A29042E8000C11E0B /* Cart.swift in Sources */,
 				F13725C328FEF5C600B95469 /* FoodCartVC.swift in Sources */,
+				F115594C29042E8F00C11E0B /* CartResult.swift in Sources */,
+				F115594E290453D000C11E0B /* FoodsDetailRouter.swift in Sources */,
 				F11B08C52902BE1000005115 /* FoodsMainPresenter.swift in Sources */,
+				F115594629041B0A00C11E0B /* FoodsDetailPresenter.swift in Sources */,
+				F1155944290419C600C11E0B /* FoodsDetailProtocol.swift in Sources */,
 				F13725AB28FEB71500B95469 /* AppDelegate.swift in Sources */,
 				F13725AD28FEB71500B95469 /* SceneDelegate.swift in Sources */,
 				F11B08C12902BC6400005115 /* Foods.swift in Sources */,
@@ -269,6 +356,7 @@
 				F11B08C32902BC6E00005115 /* FoodsResult.swift in Sources */,
 				F11B08CB2902BE4B00005115 /* FoodsMainProtocol.swift in Sources */,
 				F11B08C92902BE3C00005115 /* FoodsMainRouter.swift in Sources */,
+				F115594829041B6000C11E0B /* FoodsDetailInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
