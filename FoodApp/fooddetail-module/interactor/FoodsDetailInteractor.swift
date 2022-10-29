@@ -27,4 +27,19 @@ class FoodsDetailInteractor: PresenterToInteractorFoodsDetailProtocol {
         
     }
     
+    func deleteFood(sepet_yemek_id: Int, kullanici_adi: String) {
+        let params : Parameters = ["sepet_yemek_id": sepet_yemek_id, "kullanici_adi": kullanici_adi]
+        
+        AF.request("http://kasimadalan.pe.hu/yemekler/sepettenYemekSil.php", method: .post, parameters: params).response { response in
+            if let data = response.data {
+                do {
+                    let result = try JSONSerialization.jsonObject(with: data)
+                    print(result)
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
+    }
+    
 }

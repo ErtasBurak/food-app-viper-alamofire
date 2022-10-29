@@ -27,6 +27,8 @@ class FoodMainVC: UIViewController {
         foodTableView.dataSource = self
         
         FoodsMainRouter.createModule(ref: self)
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,9 +41,12 @@ class FoodMainVC: UIViewController {
             if let food = sender as? Foods {
                 let sendVC = segue.destination as! FoodDetailVC
                 sendVC.food = food
+                
             }
         }
     }
+    
+    
     
 }
 

@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  FoodApp
+
+  Created by Burak Ertaş on 27.10.2022.
+  
+*/
+"Empty_Cart" = "Empty Cart";
+"pls_add_cart" = "Please, add food to cart!";
+"empty_tableview" = "Cart is Empty. Please Add a product to Cart!";
+"content_title" = "Food App";
+"content_subtitle" = "Your order is on its way. Enjoy your meal.";
+"payment_process" = "Payment Process";
+"payment_message" = "Should we take the payment? The amount is : ";
+"cancel_process" = "Payment Process Cancel";
+"cancel_message" = "Do you want to cancel the payment process?";
+"warning_payment_title" = "Missing Gaps";
+"warning_payment_message_credit" = "Please fill the gaps those with stars.(You can pass the credit card information)";
+"warning_payment_message" = "Please fill the gaps those with stars.";
+"ok_id" = "OK";
+"cancel_id" = "Cancel";
+"delete_id_title" = "Delete Process";
+"product_delete_message" = "Should we delete the product? Product : ";
+"delete_id" = "Delete";
+"order_process" = "Order Process";
+"order_process_message" = "Should we take your order, the cost is ";
+"empty_card_message" = "Please, add product to cart!";
+"delete_all_id" = "Should we delete all products?";

@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  FoodApp
+
+  Created by Burak Ertaş on 27.10.2022.
+  
+*/
+"Empty_Cart" = "Leeres Korb";
+"pls_add_cart" = "Bitte, Produkt hinzufügen!";
+"empty_tableview" = "Der Korb is Leer. Bitte, Produkt hinzufügen!";
+"content_title" = "Food App";
+"content_subtitle" = "Ihre Bestellung ist unterwegs. Guten Appetit.";
+"payment_process" = "Zahlungsphase";
+"payment_message" = "Zahlung Bestätigen... Gesamtsumme : ";
+"cancel_process" = "Transaktionsstornierung";
+"cancel_message" = "Wollen Sie die transaktion stornieren?";
+"warning_payment_title" = "Fehlende Lücken";
+"warning_payment_message_credit" = "Bitte füllen Sie die Leere Lücken die mit Sterne sind.(Sie können die Kreditkarte Information freilassen)";
+"warning_payment_message" = "Bitte füllen Sie die Leere Lücken die mit Sterne sind.";
+"ok_id" = "OK";
+"cancel_id" = "Abbrechen";
+"delete_id_title" = "Löschvorgang";
+"product_delete_message" = "Sollen wir die Produkt löschen? Produkt : ";
+"delete_id" = "Löschen";
+"order_process" = "Bestellvorgang";
+"order_process_message" = "Sollen wir Ihre bestellung aufnehmen, die Summe ist ";
+"empty_card_message" = "Bitte Produkt hinzufügen!";
+"delete_all_id" = "Alle Produkte löschen?";

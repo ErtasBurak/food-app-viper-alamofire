@@ -1,0 +1,177 @@
+
+/* Class = "UITextField"; placeholder = "Enter your username..."; ObjectID = "00d-Hr-dul"; */
+"00d-Hr-dul.placeholder" = "Kullanıcı adnızı girin...";
+
+/* Class = "UITextField"; placeholder = "Name Surname*"; ObjectID = "12Y-uN-VhV"; */
+"12Y-uN-VhV.placeholder" = "İsim Soyisim*";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "1Db-qs-B35"; */
+"1Db-qs-B35.text" = "Label";
+
+/* Class = "UILabel"; text = "0 ₺"; ObjectID = "310-0V-09u"; */
+"310-0V-09u.text" = "0 ₺";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "6We-LV-tGA"; */
+"6We-LV-tGA.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Create an Account"; ObjectID = "CD1-0E-lZ0"; */
+"CD1-0E-lZ0.configuration.title" = "Hesap oluştur";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "CD1-0E-lZ0"; */
+"CD1-0E-lZ0.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Address line 1*"; ObjectID = "DYv-a2-yHY"; */
+"DYv-a2-yHY.placeholder" = "Adres satırı 1*";
+
+/* Class = "UILabel"; text = "Eat the best foods in Istanbul and learn about the turkish cuisine"; ObjectID = "GLb-NK-R7j"; */
+"GLb-NK-R7j.text" = "En iyi yemekleri İstanbulda tüketin ve Türk mutfağı hakkında bilgi edinin";
+
+/* Class = "UISearchBar"; placeholder = "Search food..."; ObjectID = "Ga5-Av-pqc"; */
+"Ga5-Av-pqc.placeholder" = "Yemek ara...";
+
+/* Class = "UISearchBar"; Ga5-Av-pqc.scopeButtonTitles[0] = "Title"; ObjectID = "Ga5-Av-pqc"; */
+"Ga5-Av-pqc.scopeButtonTitles[0]" = "Title";
+
+/* Class = "UISearchBar"; Ga5-Av-pqc.scopeButtonTitles[1] = "Title"; ObjectID = "Ga5-Av-pqc"; */
+"Ga5-Av-pqc.scopeButtonTitles[1]" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JLv-2e-kfn"; */
+"JLv-2e-kfn.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Jka-Lt-Dmp"; */
+"Jka-Lt-Dmp.text" = "Label";
+
+/* Class = "UILabel"; text = "Payment Type"; ObjectID = "KXO-Yi-C1R"; */
+"KXO-Yi-C1R.text" = "Ödeme Tipi";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "LBj-eH-MgL"; */
+"LBj-eH-MgL.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "Food Detail"; ObjectID = "Lhc-MO-kYd"; */
+"Lhc-MO-kYd.title" = "Yemek Detayı";
+
+/* Class = "UILabel"; text = "Expiration Date :"; ObjectID = "Mx1-zn-Wlb"; */
+"Mx1-zn-Wlb.text" = "Son kullanma tarihi :";
+
+/* Class = "UIButton"; configuration.title = "Add To Cart"; ObjectID = "O9h-Cg-rwF"; */
+"O9h-Cg-rwF.configuration.title" = "Sepete Ekle";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "O9h-Cg-rwF"; */
+"O9h-Cg-rwF.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Address line 2(optional)"; ObjectID = "OX3-pp-MT2"; */
+"OX3-pp-MT2.placeholder" = "Adres satırı 2(opsiyonel)";
+
+/* Class = "UIButton"; configuration.title = "Now"; ObjectID = "P60-9K-VXp"; */
+"P60-9K-VXp.configuration.title" = "Şimdi";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "P60-9K-VXp"; */
+"P60-9K-VXp.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Pfb-f9-VbE"; */
+"Pfb-f9-VbE.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "Food Cart"; ObjectID = "PgE-9O-bay"; */
+"PgE-9O-bay.title" = "Yemek sepeti";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "PwY-Mj-gXm"; */
+"PwY-Mj-gXm.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Q18-Sq-u3e"; */
+"Q18-Sq-u3e.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Already have an Account"; ObjectID = "RVa-ZX-Igz"; */
+"RVa-ZX-Igz.configuration.title" = "Hesabım var";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "RVa-ZX-Igz"; */
+"RVa-ZX-Igz.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "CVV*"; ObjectID = "VlZ-9p-Qoj"; */
+"VlZ-9p-Qoj.placeholder" = "CVV*";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "XQc-kH-LPk"; */
+"XQc-kH-LPk.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "XtA-6v-jUV"; */
+"XtA-6v-jUV.title" = "Item";
+
+/* Class = "UILabel"; text = "Credit Card Information"; ObjectID = "YJK-ox-OF0"; */
+"YJK-ox-OF0.text" = "Kredi Kart Bilgisi";
+
+/* Class = "UIButton"; configuration.title = "Order"; ObjectID = "ZFa-oO-KJp"; */
+"ZFa-oO-KJp.configuration.title" = "Sipariş Ver";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ZFa-oO-KJp"; */
+"ZFa-oO-KJp.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "*"; ObjectID = "a0I-DU-gE6"; */
+"a0I-DU-gE6.placeholder" = "*";
+
+/* Class = "UISegmentedControl"; aIf-KH-z9E.segmentTitles[0] = "Credit Card"; ObjectID = "aIf-KH-z9E"; */
+"aIf-KH-z9E.segmentTitles[0]" = "Kredi Kart";
+
+/* Class = "UISegmentedControl"; aIf-KH-z9E.segmentTitles[1] = "Pay at the door"; ObjectID = "aIf-KH-z9E"; */
+"aIf-KH-z9E.segmentTitles[1]" = "Kapıda Ödeme";
+
+/* Class = "UIButton"; configuration.title = "Pay"; ObjectID = "bo9-bE-kv6"; */
+"bo9-bE-kv6.configuration.title" = "Öde";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bo9-bE-kv6"; */
+"bo9-bE-kv6.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Credit Card Number*"; ObjectID = "d9W-9M-g0e"; */
+"d9W-9M-g0e.placeholder" = "Kredi Kart Numarası*";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "f3l-YJ-DZR"; */
+"f3l-YJ-DZR.text" = "Adres";
+
+/* Class = "UILabel"; text = "Sign In"; ObjectID = "gAe-kj-htz"; */
+"gAe-kj-htz.text" = "Oturum Aç";
+
+/* Class = "UILabel"; text = "Best Foods, Don't Miss It"; ObjectID = "gbl-9J-yZD"; */
+"gbl-9J-yZD.text" = "En iyi yemekler burada, Kaçırmayın";
+
+/* Class = "UITextField"; placeholder = "Enter your password..."; ObjectID = "iZO-yu-9Nu"; */
+"iZO-yu-9Nu.placeholder" = "Şifrenizi giriniz...";
+
+/* Class = "UINavigationItem"; title = "Foods"; ObjectID = "isJ-C5-fhD"; */
+"isJ-C5-fhD.title" = "Yemekler";
+
+/* Class = "UILabel"; text = "Thank you for your order! Your food is on the way..."; ObjectID = "jzw-P8-UvZ"; */
+"jzw-P8-UvZ.text" = "Siparişiniz için teşekkür ederiz! Siparişiniz yolda...";
+
+/* Class = "UILabel"; text = "Sign Up"; ObjectID = "ka2-8E-Gb6"; */
+"ka2-8E-Gb6.text" = "Kaydol";
+
+/* Class = "UILabel"; text = "Order Time(delivery: 30-45 min)"; ObjectID = "mhO-5N-QeK"; */
+"mhO-5N-QeK.text" = "Sipariş Zamanı(teslimat: 30-45 dakika)";
+
+/* Class = "UIButton"; configuration.title = "Cancel"; ObjectID = "oIZ-J5-Fcr"; */
+"oIZ-J5-Fcr.configuration.title" = "İptal";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oIZ-J5-Fcr"; */
+"oIZ-J5-Fcr.normalTitle" = "Button";
+
+/* Class = "UIBarButtonItem"; title = "Home"; ObjectID = "or7-hu-nbM"; */
+"or7-hu-nbM.title" = "Home";
+
+/* Class = "UITextField"; placeholder = "Enter your password..."; ObjectID = "pJA-wb-o5u"; */
+"pJA-wb-o5u.placeholder" = "Şifrenizi giriniz...";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "pqq-or-EeK"; */
+"pqq-or-EeK.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Enter your username..."; ObjectID = "rCi-El-lXW"; */
+"rCi-El-lXW.placeholder" = "Kullanıcı adınızı girin...";
+
+/* Class = "UILabel"; text = "-"; ObjectID = "rfr-R5-vYm"; */
+"rfr-R5-vYm.text" = "-";
+
+/* Class = "UITextField"; placeholder = "Pick a time"; ObjectID = "sYS-p1-jCD"; */
+"sYS-p1-jCD.placeholder" = "Saat seçin";
+
+/* Class = "UINavigationItem"; title = "Payment Screen"; ObjectID = "tNz-Fw-CTS"; */
+"tNz-Fw-CTS.title" = "Ödeme Ekranı";
+
+/* Class = "UILabel"; text = "0 ₺"; ObjectID = "zVh-Ai-zYA"; */
+"zVh-Ai-zYA.text" = "0 ₺";

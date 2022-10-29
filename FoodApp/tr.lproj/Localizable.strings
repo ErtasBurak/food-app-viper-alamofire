@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  FoodApp
+
+  Created by Burak Ertaş on 27.10.2022.
+  
+*/
+"Empty_Cart" = "Boş Sepet";
+"pls_add_cart" = "Lütfen, sepete ürün ekleyiniz!";
+"empty_tableview" = "Sepet Boş. Lütfen Ürün Ekleyiniz!";
+"content_title" = "Food App";
+"content_subtitle" = "Siparişiniz yoldadır. Afiyet olsun.";
+"payment_process" = "Ödeme Aşaması";
+"payment_message" = "Ödemeniz tamamlansın mı? Tutar : ";
+"cancel_process" = "İşlem İptali";
+"cancel_message" = "İşlemi iptal etmek istiyor musunuz?";
+"warning_payment_title" = "Eksik Bilgi";
+"warning_payment_message_credit" = "Lütfen yıldızlı boş alanları doldurunuz.(Kredi kart bilgilerini boş bırakabilirsiniz)";
+"warning_payment_message" = "Lütfen yıldızlı boş alanları doldurunuz.";
+"ok_id" = "Tamam";
+"cancel_id" = "İptal";
+"delete_id_title" = "Silme İşlemi";
+"product_delete_message" = "Ürün silinsin mi? Ürün : ";
+"delete_id" = "Sil";
+"order_process" = "Sipariş İşlemi";
+"order_process_message" = "Siparişinizi kayıt edelim mi, toplam tutar ";
+"empty_card_message" = "Lütfen, sepete ürün ekleyiniz!";
+"delete_all_id" = "Bütün ürünler silinsin mi?";
