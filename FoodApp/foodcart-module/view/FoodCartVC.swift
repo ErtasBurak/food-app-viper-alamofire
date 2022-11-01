@@ -7,23 +7,21 @@
 
 import UIKit
 import Kingfisher
-
+import Firebase
 
 class FoodCartVC: UIViewController {
 
     @IBOutlet weak var foodsCartOrder: UIButton!
     @IBOutlet weak var foodsCartTotal: UILabel!
     @IBOutlet weak var foodsCartTableView: UITableView!
-    
-    
-    
+ 
     var cartList = [Cart]() {
         didSet{
             cartList.sort {$0.yemek_adi! < $1.yemek_adi!}
         }
     }
     
-    var userName = "burak_ertas"
+    var userName = "\((Firebase.Auth.auth().currentUser?.email)!)"
     
     var priceForPayment: Int?
     
@@ -40,12 +38,12 @@ class FoodCartVC: UIViewController {
         FoodsCartRouter.createModule(ref: self)
         
         self.navigationItem.setHidesBackButton(true, animated: false)
-        
-        
+          
     }
     
     override func viewWillAppear(_ animated: Bool) {
-
+            
+        
         foodsCartPresenterInstance?.getFoods(kullanici_adi: userName)
         
     }
@@ -71,8 +69,6 @@ class FoodCartVC: UIViewController {
         }
     }
     
-    
-
     @IBAction func foodsCartOrder(_ sender: Any) {
         
         if cartList.isEmpty {
@@ -139,8 +135,6 @@ class FoodCartVC: UIViewController {
         
     }
     
-    
-    
 }
 
 extension FoodCartVC: PresenterToViewFoodsCartProtocol {
@@ -154,7 +148,7 @@ extension FoodCartVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if cartList.isEmpty {
-            foodsCartTableView.setEmptyMessage(String(localized: "empty_tableview"))
+            foodsCartTableView.setEmptyMessage(String(localized: "empty_tableview"), "emptyCart")
             foodsCartTotal.text = "0 ₺"
             foodsCartOrder.tintColor = UIColor(white: 0.1, alpha: 0.3)
             foodsCartOrder.backgroundColor = UIColor(white: 0.1, alpha: 0.3)
@@ -182,40 +176,58 @@ extension FoodCartVC: UITableViewDelegate, UITableViewDataSource {
                 cell.cartImage.kf.setImage(with: url)
             }
         }
-                
-        cell.cartStepper.value = Double(Int(cart.yemek_siparis_adet!)!)
-        cell.cartPriceLabel.text = "\(cart.yemek_fiyat!) ₺"
-                
-        basicPrice = Int(cart.yemek_fiyat!)! / Int(cell.cartStepper.value)
         
+            cell.cartStepper.value = Double(Int(cart.yemek_siparis_adet!)!)
+            self.basicPrice = (Int(cart.yemek_fiyat!)! / Int(cart.yemek_siparis_adet!)!)
+            cell.cartPriceLabel.text = "\(((Int(cart.yemek_fiyat!)! / Int(cart.yemek_siparis_adet!)!)) * Int(cart.yemek_siparis_adet!)!) ₺"
+        
+            cell.stepperAction = { sender in
                 
-        cell.stepperAction = { sender in
-            cell.cartPriceLabel.text = "\(Int(cell.cartStepper.value) * self.basicPrice!) ₺"
+                if cell.cartStepper.leftButton.isTouchInside || cell.cartStepper.rightButton.isTouchInside {
+                    
+                    if cell.cartStepper.value == 0 {
+                             
+                        let cart = self.cartList[indexPath.row]
+                                        
+                        let alert = UIAlertController(title: String(localized: "delete_id_title"), message: "\(String(localized: "product_delete_message")) \(cart.yemek_adi!).", preferredStyle: .alert)
+                                        
+                        let cancelAction = UIAlertAction(title: String(localized: "cancel_id"), style: .cancel) { action in
+                            cell.cartStepper.value = 1
+                        }
+                        alert.addAction(cancelAction)
+                                        
+                        let okAction = UIAlertAction(title: String(localized: "ok_id"), style: .destructive) { action in
+                            self.cartList.remove(at: indexPath.row)
+                            self.foodsCartPresenterInstance?.delete(sepet_yemek_id: Int(cart.sepet_yemek_id!)!, kullanici_adi: cart.kullanici_adi!)
+                            DispatchQueue.main.async {
+                                self.foodsCartTableView.reloadData()
+                            }
+                        }
+                        alert.addAction(okAction)
+                                
+                        self.present(alert, animated: true)
+                                                          
+                    }else{
                         
-            if cell.cartStepper.value == 0 {
-                let cart = self.cartList[indexPath.row]
-                        
-                let alert = UIAlertController(title: String(localized: "delete_id_title"), message: "\(String(localized: "product_delete_message")) \(cart.yemek_adi!).", preferredStyle: .alert)
-                        
-                let cancelAction = UIAlertAction(title: String(localized: "cancel_id"), style: .cancel)
-                alert.addAction(cancelAction)
-                        
-                let okAction = UIAlertAction(title: String(localized: "ok_id"), style: .destructive) { action in
-                    self.cartList.remove(at: indexPath.row)
-                    self.foodsCartPresenterInstance?.delete(sepet_yemek_id: Int(cart.sepet_yemek_id!)!, kullanici_adi: cart.kullanici_adi!)
-                    DispatchQueue.main.async {
-                        self.foodsCartTableView.reloadData()
+                        self.foodsCartPresenterInstance?.delete(sepet_yemek_id: Int(cart.sepet_yemek_id!)!, kullanici_adi: cart.kullanici_adi!)
+                        self.foodsCartPresenterInstance?.add(yemek_adi: cart.yemek_adi!, yemek_resim_adi: cart.yemek_resim_adi!, yemek_fiyat: ((Int(cart.yemek_fiyat!)! / Int(cart.yemek_siparis_adet!)!) * Int(cell.cartStepper.value)) , yemek_siparis_adet: Int(cell.cartStepper.value), kullanici_adi: cart.kullanici_adi!)
+                                       
                     }
-                }
-                alert.addAction(okAction)
+                    
+                    self.foodsCartTableView.isScrollEnabled = false
+                    
+                    cell.isUserInteractionEnabled = false
+                    
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                        self.foodsCartTableView.isScrollEnabled = true
+                        cell.isUserInteractionEnabled = true
                         
-                self.present(alert, animated: true)
+                    }
+                    
             }
-                    
-            //todo add delete func
-                    
+                
         }
-            
+        
         return cell
         
     }

@@ -26,3 +26,9 @@
 "order_process_message" = "Should we take your order, the cost is ";
 "empty_card_message" = "Please, add product to cart!";
 "delete_all_id" = "Should we delete all products?";
+"error_id_register" = "Couldn't create account. Please check the username and password!";
+"created_auth" = "User created";
+"login_success" = "Login success";
+"error_id_login" = "Please, check your username and password!";
+"noData_message" = "There are no products with this name!";
+"updatebutton_id" = "Update The Cart";

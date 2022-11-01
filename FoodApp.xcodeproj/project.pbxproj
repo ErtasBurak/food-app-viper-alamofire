@@ -27,6 +27,7 @@
 		F11B08CB2902BE4B00005115 /* FoodsMainProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11B08CA2902BE4B00005115 /* FoodsMainProtocol.swift */; };
 		F11B08CE2902C3FF00005115 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F11B08CD2902C3FF00005115 /* Alamofire */; };
 		F11B08D12902DD3F00005115 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = F11B08D02902DD3F00005115 /* Kingfisher */; };
+		F120C8BD290D2E3300461458 /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F120C8BC290D2E3300461458 /* RobotoSlab-Regular.ttf */; };
 		F123460129053C7400A66DAA /* FoodsCartProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123460029053C7400A66DAA /* FoodsCartProtocol.swift */; };
 		F123460329053E5D00A66DAA /* FoodsCartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123460229053E5D00A66DAA /* FoodsCartPresenter.swift */; };
 		F123460529053EBB00A66DAA /* FoodsCartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123460429053EBB00A66DAA /* FoodsCartInteractor.swift */; };
@@ -46,6 +47,8 @@
 		F13725C128FEF58700B95469 /* FoodDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13725C028FEF58700B95469 /* FoodDetailVC.swift */; };
 		F13725C328FEF5C600B95469 /* FoodCartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13725C228FEF5C600B95469 /* FoodCartVC.swift */; };
 		F13725C628FF22D300B95469 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = F13725C528FF22D300B95469 /* Lottie */; };
+		F13F8938290ECEC200C88256 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = F13F8937290ECEC200C88256 /* FirebaseAuth */; };
+		F13F893A290ECF4500C88256 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F13F8939290ECF4500C88256 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +70,7 @@
 		F11B08C62902BE3000005115 /* FoodsMainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsMainInteractor.swift; sourceTree = "<group>"; };
 		F11B08C82902BE3C00005115 /* FoodsMainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsMainRouter.swift; sourceTree = "<group>"; };
 		F11B08CA2902BE4B00005115 /* FoodsMainProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsMainProtocol.swift; sourceTree = "<group>"; };
+		F120C8BC290D2E3300461458 /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
 		F12100142909531400C3A20F /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		F123460029053C7400A66DAA /* FoodsCartProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsCartProtocol.swift; sourceTree = "<group>"; };
 		F123460229053E5D00A66DAA /* FoodsCartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsCartPresenter.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 		F13725BE28FEF57700B95469 /* FoodMainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodMainVC.swift; sourceTree = "<group>"; };
 		F13725C028FEF58700B95469 /* FoodDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailVC.swift; sourceTree = "<group>"; };
 		F13725C228FEF5C600B95469 /* FoodCartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCartVC.swift; sourceTree = "<group>"; };
+		F13F8939290ECF4500C88256 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F17D1A8A290C6626003C8712 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		F17D1A8C290C6659003C8712 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		F17D1A8E290C6663003C8712 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
@@ -101,6 +106,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F133E4922909E982001448A4 /* CoreLocation.framework in Frameworks */,
+				F13F8938290ECEC200C88256 /* FirebaseAuth in Frameworks */,
 				F11B08D12902DD3F00005115 /* Kingfisher in Frameworks */,
 				F133E4942909E98A001448A4 /* MapKit.framework in Frameworks */,
 				F13725C628FF22D300B95469 /* Lottie in Frameworks */,
@@ -305,6 +311,14 @@
 			path = entity;
 			sourceTree = "<group>";
 		};
+		F120C8BB290D2DEC00461458 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F120C8BC290D2E3300461458 /* RobotoSlab-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		F133E4902909E982001448A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,6 +365,8 @@
 				F133E4A3290A0BFC001448A4 /* Localizable.strings */,
 				F13725B528FEB71800B95469 /* LaunchScreen.storyboard */,
 				F13725B828FEB71800B95469 /* Info.plist */,
+				F13F8939290ECF4500C88256 /* GoogleService-Info.plist */,
+				F120C8BB290D2DEC00461458 /* Fonts */,
 			);
 			path = FoodApp;
 			sourceTree = "<group>";
@@ -375,6 +391,7 @@
 				F13725C528FF22D300B95469 /* Lottie */,
 				F11B08CD2902C3FF00005115 /* Alamofire */,
 				F11B08D02902DD3F00005115 /* Kingfisher */,
+				F13F8937290ECEC200C88256 /* FirebaseAuth */,
 			);
 			productName = FoodApp;
 			productReference = F13725A728FEB71500B95469 /* FoodApp.app */;
@@ -410,6 +427,7 @@
 				F13725C428FF22D300B95469 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				F11B08CC2902C3FF00005115 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F11B08CF2902DD3F00005115 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				F13F8936290ECEC100C88256 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = F13725A828FEB71500B95469 /* Products */;
 			projectDirPath = "";
@@ -426,8 +444,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F13725B728FEB71800B95469 /* LaunchScreen.storyboard in Resources */,
+				F120C8BD290D2E3300461458 /* RobotoSlab-Regular.ttf in Resources */,
 				F133E4A1290A0BFC001448A4 /* Localizable.strings in Resources */,
 				F13725B428FEB71800B95469 /* Assets.xcassets in Resources */,
+				F13F893A290ECF4500C88256 /* GoogleService-Info.plist in Resources */,
 				F13725B228FEB71500B95469 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -730,6 +750,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		F13F8936290ECEC100C88256 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -747,6 +775,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F13725C428FF22D300B95469 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		F13F8937290ECEC200C88256 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F13F8936290ECEC100C88256 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

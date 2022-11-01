@@ -126,7 +126,23 @@ class PaymentVC: UIViewController {
     
     @IBAction func payButton(_ sender: Any) {
         if segControl.selectedSegmentIndex == 0 {
-            if tfCVV.text == "" && tfCardNumber.text == "" && tfDate.text == "" && tfNameSurname.text == "" && tfaddress1.text == "" {
+            if tfaddress1.text != "" && tfCVV.text != "" && tfCardNumber.text != "" && tfDate.text != "" && tfNameSurname.text != "" {
+                
+                let alert = UIAlertController(title: String(localized: "payment_process"), message: "\(String(localized: "payment_message")) \(self.priceLabel.text!).", preferredStyle: .alert)
+                
+                let cancelAction = UIAlertAction(title: String(localized: "cancel_id"), style: .cancel)
+                alert.addAction(cancelAction)
+                
+                let okAction = UIAlertAction(title: String(localized: "ok_id"), style: .default) { action in
+                    self.performSegue(withIdentifier: "payTapped", sender: nil)
+                    self.performSegue(withIdentifier: "payToMain", sender: nil)
+                    self.buttonUserNotification()
+                }
+                alert.addAction(okAction)
+                
+                self.present(alert, animated: true)
+                
+            } else {
                 
                 let alert = UIAlertController(title: String(localized: "warning_payment_title"), message: String(localized: "warning_payment_message"), preferredStyle: .alert)
                 
@@ -135,7 +151,10 @@ class PaymentVC: UIViewController {
                 
                 self.present(alert, animated: true)
                 
-            } else {
+            }
+        } else {
+            
+            if tfaddress1.text != "" {
                 
                 let alert = UIAlertController(title: String(localized: "payment_process"), message: "\(String(localized: "payment_message")) \(self.priceLabel.text!).", preferredStyle: .alert)
                 
@@ -151,29 +170,11 @@ class PaymentVC: UIViewController {
                 
                 self.present(alert, animated: true)
                 
-            }
-        } else {
-            if tfaddress1.text == "" {
-                
+            } else {
+       
                 let alert = UIAlertController(title: String(localized: "warning_payment_title"), message: String(localized: "warning_payment_message_credit"), preferredStyle: .alert)
                 
                 let okAction = UIAlertAction(title: String(localized: "ok_id"), style: .default)
-                alert.addAction(okAction)
-                
-                self.present(alert, animated: true)
-                
-            } else {
-                
-                let alert = UIAlertController(title: String(localized: "payment_process"), message: "\(String(localized: "payment_message")) \(self.priceLabel.text!).", preferredStyle: .alert)
-                
-                let cancelAction = UIAlertAction(title: String(localized: "cancel_id"), style: .cancel)
-                alert.addAction(cancelAction)
-                
-                let okAction = UIAlertAction(title: String(localized: "ok_id"), style: .default) { action in
-                    self.performSegue(withIdentifier: "payTapped", sender: nil)
-                    self.performSegue(withIdentifier: "payToMain", sender: nil)
-                    self.buttonUserNotification()
-                }
                 alert.addAction(okAction)
                 
                 self.present(alert, animated: true)

@@ -26,3 +26,9 @@
 "order_process_message" = "Sollen wir Ihre bestellung aufnehmen, die Summe ist ";
 "empty_card_message" = "Bitte Produkt hinzufügen!";
 "delete_all_id" = "Alle Produkte löschen?";
+"error_id_register" = "Konto könnte nicht erstellt. Bitte prüfen Sie benutzername und passwort!";
+"created_auth" = "Konto erstellt";
+"login_success" = "Konto erreicht";
+"error_id_login" = "Bitte prüfen Sie Ihre benutzername und passwort!";
+"noData_message" = "Es gibt keine Produkte mit diesem Namen!";
+"updatebutton_id" = "Korb Aktualisieren";

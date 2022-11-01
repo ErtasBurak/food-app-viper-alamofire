@@ -10,23 +10,22 @@ import Lottie
 
 extension UITableView {
 
-    func setEmptyMessage(_ message: String) {
+    func setEmptyMessage(_ message: String, _ lottieName: String) {
         
         let uiView = UIView(frame: CGRect(x: 0, y: 0, width: self.bounds.size.width, height: self.bounds.size.height))
   
         var animationView = LottieAnimationView()
-        animationView = .init(name: "emptyCart")
+        animationView = .init(name: lottieName)
         animationView.frame = CGRect(x: uiView.bounds.size.width * 0.2, y: uiView.bounds.size.height * 0.1, width: uiView.bounds.size.width * 0.6, height: uiView.bounds.size.height * 0.5)
         animationView.contentMode = .scaleAspectFit
         animationView.loopMode = .loop
         animationView.play()
         
-        let messageLabel = UILabel(frame: CGRect(x: uiView.bounds.size.width * 0.2, y: uiView.bounds.size.height * 0.5, width: uiView.bounds.size.width * 0.7, height: uiView.bounds.size.height * 0.9))
+        let messageLabel = UILabel(frame: CGRect(x: uiView.bounds.size.width * 0.2, y: uiView.bounds.size.height * 0.6, width: uiView.bounds.size.width * 0.6, height: uiView.bounds.size.height * 0.1))
         messageLabel.text = message
         messageLabel.textColor = .white
         messageLabel.numberOfLines = 0
         messageLabel.textAlignment = .center
-        messageLabel.sizeToFit()
         
         uiView.addSubview(animationView)
         uiView.addSubview(messageLabel)
@@ -39,6 +38,7 @@ extension UITableView {
         self.backgroundView = nil
         
     }
+    
 }
 
 extension UIImageView{

@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
 
 class FoodsCartInteractor: PresenterToInteractorFoodsCartProtocol {
+    
     var foodsCartPresenter: InteractorToPresenterFoodsCartProtocol?
     
     func getAllFoods(kullanici_adi: String) {
@@ -39,7 +40,6 @@ class FoodsCartInteractor: PresenterToInteractorFoodsCartProtocol {
                     DispatchQueue.main.async {
                         self.getAllFoods(kullanici_adi: kullanici_adi)
                     }
-                    
                 } catch {
                     print(error.localizedDescription)
                 }
@@ -51,6 +51,24 @@ class FoodsCartInteractor: PresenterToInteractorFoodsCartProtocol {
         for cartItem in allCart {
             DispatchQueue.main.async { [weak self] in
                 self?.deleteFood(sepet_yemek_id: Int(cartItem.sepet_yemek_id!)!, kullanici_adi: kullanici_adi)
+            }
+        }
+    }
+    
+    func foodAdd(yemek_adi: String, yemek_resim_adi: String, yemek_fiyat: Int, yemek_siparis_adet: Int, kullanici_adi: String) {
+        let params: Parameters = ["yemek_adi": yemek_adi, "yemek_resim_adi": yemek_resim_adi, "yemek_fiyat": yemek_fiyat, "yemek_siparis_adet": yemek_siparis_adet, "kullanici_adi": kullanici_adi]
+        
+        AF.request("http://kasimadalan.pe.hu/yemekler/sepeteYemekEkle.php", method: .post, parameters: params).response { response in
+            if let data = response.data {
+                do {
+                    let result = try JSONSerialization.jsonObject(with: data)
+                    print(result)
+                    DispatchQueue.main.async {
+                        self.getAllFoods(kullanici_adi: kullanici_adi)
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
             }
         }
     }

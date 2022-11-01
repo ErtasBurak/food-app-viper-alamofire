@@ -69,6 +69,11 @@ extension FoodMainVC: UISearchBarDelegate {
 
 extension FoodMainVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if foodsList.isEmpty {
+            foodTableView.setEmptyMessage(String(localized: "noData_message"), "noData")
+        } else {
+            foodTableView.restore()
+        }
         return foodsList.count
     }
     

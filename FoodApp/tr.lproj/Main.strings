@@ -1,6 +1,6 @@
 
 /* Class = "UITextField"; placeholder = "Enter your username..."; ObjectID = "00d-Hr-dul"; */
-"00d-Hr-dul.placeholder" = "Kullanıcı adnızı girin...";
+"00d-Hr-dul.placeholder" = "Kullanıcı adnızı girin...*";
 
 /* Class = "UITextField"; placeholder = "Name Surname*"; ObjectID = "12Y-uN-VhV"; */
 "12Y-uN-VhV.placeholder" = "İsim Soyisim*";
@@ -132,7 +132,7 @@
 "gbl-9J-yZD.text" = "En iyi yemekler burada, Kaçırmayın";
 
 /* Class = "UITextField"; placeholder = "Enter your password..."; ObjectID = "iZO-yu-9Nu"; */
-"iZO-yu-9Nu.placeholder" = "Şifrenizi giriniz...";
+"iZO-yu-9Nu.placeholder" = "Şifrenizi giriniz...*";
 
 /* Class = "UINavigationItem"; title = "Foods"; ObjectID = "isJ-C5-fhD"; */
 "isJ-C5-fhD.title" = "Yemekler";
@@ -156,13 +156,13 @@
 "or7-hu-nbM.title" = "Home";
 
 /* Class = "UITextField"; placeholder = "Enter your password..."; ObjectID = "pJA-wb-o5u"; */
-"pJA-wb-o5u.placeholder" = "Şifrenizi giriniz...";
+"pJA-wb-o5u.placeholder" = "Şifrenizi giriniz...*";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "pqq-or-EeK"; */
 "pqq-or-EeK.text" = "Label";
 
 /* Class = "UITextField"; placeholder = "Enter your username..."; ObjectID = "rCi-El-lXW"; */
-"rCi-El-lXW.placeholder" = "Kullanıcı adınızı girin...";
+"rCi-El-lXW.placeholder" = "Kullanıcı adınızı girin...*";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "rfr-R5-vYm"; */
 "rfr-R5-vYm.text" = "-";

@@ -26,3 +26,9 @@
 "order_process_message" = "Siparişinizi kayıt edelim mi, toplam tutar ";
 "empty_card_message" = "Lütfen, sepete ürün ekleyiniz!";
 "delete_all_id" = "Bütün ürünler silinsin mi?";
+"error_id_register" = "Hesap oluşturulamadı. Lütfen uygun kullanıcı adı ve şifre kullanınız!";
+"created_auth" = "Hesap oluşturuldu";
+"login_success" = "Oturum açıldı";
+"error_id_login" = "Lütfen, kullanıcı adınızı ve şifrenizi kontrol ediniz!";
+"noData_message" = "Bu isme uygun ürün yok!";
+"updatebutton_id" = "Sepeti Güncelle";

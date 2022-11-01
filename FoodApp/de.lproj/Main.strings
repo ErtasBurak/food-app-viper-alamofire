@@ -1,6 +1,6 @@
 
 /* Class = "UITextField"; placeholder = "Enter your username..."; ObjectID = "00d-Hr-dul"; */
-"00d-Hr-dul.placeholder" = "Benutzernamen eintragen...";
+"00d-Hr-dul.placeholder" = "Benutzernamen eintragen...*";
 
 /* Class = "UITextField"; placeholder = "Name Surname*"; ObjectID = "12Y-uN-VhV"; */
 "12Y-uN-VhV.placeholder" = "Name Nachname*";
@@ -132,7 +132,7 @@
 "gbl-9J-yZD.text" = "Beste Essen, Nicht Verpassen";
 
 /* Class = "UITextField"; placeholder = "Enter your password..."; ObjectID = "iZO-yu-9Nu"; */
-"iZO-yu-9Nu.placeholder" = "Passwort eintragen...";
+"iZO-yu-9Nu.placeholder" = "Passwort eintragen...*";
 
 /* Class = "UINavigationItem"; title = "Foods"; ObjectID = "isJ-C5-fhD"; */
 "isJ-C5-fhD.title" = "Essen";
@@ -156,13 +156,13 @@
 "or7-hu-nbM.title" = "Home";
 
 /* Class = "UITextField"; placeholder = "Enter your password..."; ObjectID = "pJA-wb-o5u"; */
-"pJA-wb-o5u.placeholder" = "Passwort eintragen...";
+"pJA-wb-o5u.placeholder" = "Passwort eintragen...*";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "pqq-or-EeK"; */
 "pqq-or-EeK.text" = "Label";
 
 /* Class = "UITextField"; placeholder = "Enter your username..."; ObjectID = "rCi-El-lXW"; */
-"rCi-El-lXW.placeholder" = "Benutzername eintragen...";
+"rCi-El-lXW.placeholder" = "Benutzername eintragen...*";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "rfr-R5-vYm"; */
 "rfr-R5-vYm.text" = "-";
