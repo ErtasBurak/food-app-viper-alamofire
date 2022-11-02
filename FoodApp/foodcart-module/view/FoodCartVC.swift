@@ -127,6 +127,15 @@ class FoodCartVC: UIViewController {
                     self.foodsCartTableView.dataSource = nil
                     self.foodsCartTotal.text = "0 ₺"
                 }
+                //sometimes there remains one product for sure we are doing the deleteAll process again
+                if self.cartList.isEmpty == false {
+                    self.foodsCartPresenterInstance?.deleteAll(allCart: self.cartList, kullanici_adi: self.userName)
+                }
+                DispatchQueue.main.async {
+                    self.foodsCartTableView.reloadData()
+                    self.foodsCartTableView.dataSource = nil
+                    self.foodsCartTotal.text = "0 ₺"
+                }
             }
             alert.addAction(okAction)
             
