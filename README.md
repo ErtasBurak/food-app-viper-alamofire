@@ -5,7 +5,7 @@
   <a href="https://www.apple.com"><img alt="Platform" src="https://img.shields.io/badge/platform-iOS-lightgrey"/></a>
   <a href="https://developer.apple.com/documentation/xcode-release-notes/xcode-13-release-notes"><img alt="Xcode" src="https://img.shields.io/badge/Xcode-13.4.1-blue"/></a>
   <a href="https://www.swift.org"><img alt="Swift" src="https://img.shields.io/badge/Swift-5-orange"/></a>
-  <a href="https://github.com/ErtasBurak/travel-guide-app-mvvm/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-blueviolet"/></a>
+  <a href="https://github.com/ErtasBurak/food-app-viper-alamofire/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/badge/license-MIT-blueviolet"/></a>
 </p>
 
 
