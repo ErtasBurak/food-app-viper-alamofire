@@ -10,7 +10,7 @@
 
 
 <p align="center">
-A food delivery app that implements <b>Viper</b> , using 
+A food delivery app that implements <b>Viper</b>, using 
   <a href="https://github.com/Alamofire/Alamofire">Alamofire</a>.
 </p>
 
@@ -30,6 +30,36 @@ A food delivery app that implements <b>Viper</b> , using
 - Food Cart - Add, update and delete data from Food Cart using API
 - Payment Screen (just UI)
 - Order Tracking (just UI)
+- Localization(Multiple Languages Support)
+
+<table>
+  <tr>
+        <th >Turkish</th>
+        <th >German</th>
+        <th >English</th>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/88059407/200123653-d05e584e-ee27-4971-8e26-b7e2c6c54b96.png" width="300" height="600"></td>
+    <td><img src="https://user-images.githubusercontent.com/88059407/200124677-0458b21b-2b80-497a-b580-fab58fb95d45.png" width="300" height="600"></td>
+    <td><img src="https://user-images.githubusercontent.com/88059407/200124709-008e41c9-7b3b-429c-8e0e-d7180022c241.png" width="300" height="600"></td>
+  </tr>
+</table>
+
+- Dark Mode
+<table>
+  <tr>
+        <th >Default</th>
+        <th >Dark</th>
+  </tr>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/88059407/200124709-008e41c9-7b3b-429c-8e0e-d7180022c241.png" width="300" height="600"></td>
+    <td><img src="https://user-images.githubusercontent.com/88059407/200124880-ddd93c80-24ee-43de-8bb3-4269d605f04e.png" width="300" height="600"></td>
+  </tr>
+</table>
+
+- AppIcon
+
+![AppIcon-60@3x~car](https://user-images.githubusercontent.com/88059407/200124964-5a0abb8f-3b54-46cb-8b6b-6a525a5010c7.png)
 
 
 ## ▶ Demos
